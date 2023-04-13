@@ -2,17 +2,14 @@ import React from "react";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 
 const walletHomeScreen = () => {
-  return (
-    <View style={styles.container}>
+  return <View style={styles.container}>
       <ScrollView>
       <View style={styles.header}>
         <View style={styles.headerIcons}>
-            <Image source={require(
-              // @ts-ignore
-              "./assets/back.png")} />
-             <Image source={require(
-               // @ts-ignore
-               "./assets/bell.png")} />
+            <Image source={require( // @ts-ignore
+          "./assets/back.png")} />
+             <Image source={require( // @ts-ignore
+          "./assets/bell.png")} />
         </View>
         <View>
           <Text style={styles.availText}>Available</Text>
@@ -22,9 +19,8 @@ const walletHomeScreen = () => {
           <Text style={styles.getAmount}>$1,893.90 <Text style={styles.totalAmount}>/ $5,250.35</Text></Text>
         </View>
         <View style={styles.slider}>
-          <Image style={styles.sliderImg} source={require(
-            // @ts-ignore
-            "./assets/slider.png")} />
+          <Image style={styles.sliderImg} source={require( // @ts-ignore
+          "./assets/slider.png")} />
         </View>
         <View style={styles.tabSection}>
             <View>
@@ -61,9 +57,8 @@ const walletHomeScreen = () => {
       <View style={styles.mainContainer}>
         <View style={styles.innerView}>
             <View style={styles.innerHalfView}>
-              <Image style={styles.sliderImg} source={require(
-                // @ts-ignore
-                "./assets/ethereum.png")} />
+              <Image style={styles.sliderImg} source={require( // @ts-ignore
+            "./assets/ethereum.png")} />
             <View>
               <Text style={styles.coinText}>Ethereum</Text>
               <Text style={styles.coinSubText}>ETH</Text>
@@ -78,9 +73,8 @@ const walletHomeScreen = () => {
 
         <View style={styles.innerView}>
             <View style={styles.innerHalfView}>
-              <Image style={styles.sliderImg} source={require(
-                // @ts-ignore
-                "./assets/bitcoin.png")} />
+              <Image style={styles.sliderImg} source={require( // @ts-ignore
+            "./assets/bitcoin.png")} />
             <View>
               <Text style={styles.coinText}>Bitcoin</Text>
               <Text style={styles.coinSubText}>BTC</Text>
@@ -95,9 +89,8 @@ const walletHomeScreen = () => {
 
         <View style={styles.innerView}>
             <View style={styles.innerHalfView}>
-              <Image style={styles.sliderImg} source={require(
-                // @ts-ignore
-                "./assets/ripple.png")} />
+              <Image style={styles.sliderImg} source={require( // @ts-ignore
+            "./assets/ripple.png")} />
             <View>
               <Text style={styles.coinText}>Ripple</Text>
               <Text style={styles.coinSubText}>XRP</Text>
@@ -111,14 +104,12 @@ const walletHomeScreen = () => {
       </View>
         <View style={styles.walletAreaSection}>
             <Text style={styles.mainHeading}>Currency chat</Text>
-            <Image style={styles.sliderImg} source={require(
-              // @ts-ignore
-              "./assets/dropdown.png")} />
+            <Image style={styles.sliderImg} source={require( // @ts-ignore
+        "./assets/dropdown.png")} />
         </View>
         <View style={styles.imageGraph}>
-          <Image style={styles.graphImg} source={require(
-            // @ts-ignore
-            "./assets/card.png")} />
+          <Image style={styles.graphImg} source={require( // @ts-ignore
+        "./assets/card.png")} />
         </View>
 
         <View style={styles.indicatorsSection}>
@@ -154,12 +145,10 @@ const walletHomeScreen = () => {
         </View>
       </View>
       </ScrollView>
-    </View>
-  );
+    </View>;
 };
 
 const styles = StyleSheet.create({
-
   container: {
     backgroundColor: "white",
     display: "flex",
@@ -400,5 +389,4 @@ const styles = StyleSheet.create({
     marginBottom: 10
   }
 });
-
 export default walletHomeScreen;

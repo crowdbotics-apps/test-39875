@@ -2,9 +2,7 @@ import React from "react";
 import { Text, Image, StyleSheet, View, TouchableHighlight, ScrollView } from "react-native";
 
 const MenuScreen = () => {
-  return (
-
-    <View style={styles.container}>
+  return <View style={styles.container}>
       <Image style={styles.closeImage} resizeMode="contain" source={require("./assets/close.png")} />
       <View style={styles.profileContainer}>
         <ProfileImage />
@@ -69,9 +67,7 @@ const MenuScreen = () => {
         <View style={styles.border}></View>
       </View>
       </ScrollView>
-    </View>
-
-  );
+    </View>;
 };
 
 const styles = StyleSheet.create({
@@ -127,18 +123,16 @@ const styles = StyleSheet.create({
     marginTop: 12
   }
 });
-
 export default MenuScreen;
 
-const ProfileImage = (props) => {
-  return (
-    <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
+const ProfileImage = props => {
+  return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
       <View style={profileStyles.container}>
         <Image style={profileStyles.image} resizeMode="contain" source={require("./assets/editprofiles.png")} />
       </View>
-    </TouchableHighlight>
-  );
+    </TouchableHighlight>;
 };
+
 const profileStyles = StyleSheet.create({
   container: {
     backgroundColor: "#DADADA",
